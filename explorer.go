@@ -7,13 +7,13 @@ Serves precompiled angular website from the ./dist folder.
 This must be run from the same folder as ./dist, unless run in -api-only mode.
 
 Environment options:
-* EXPLORER_HOST - The addr:port to bind the explorer to. Do not include a scheme. Defaults to 127.0.0.1:8001
+* EXPLORER_HOST - The addr:port to bind the explorer to. Do not include a scheme. Defaults to 127.0.0.1:8002
 * SKYCOIN_ADDR - The skycoin node's address. You must include a scheme. Defaults to http://127.0.0.1:8640
 
 CLI Options:
 * -api-only - Don't serve static content from ./dist, only proxy the skycoin node
 
-Run the explorer and navigate to http://127.0.0.1:8001/api.html for API documentation.
+Run the explorer and navigate to http://127.0.0.1:8002/api.html for API documentation.
 
 */
 
@@ -36,7 +36,7 @@ import (
 )
 
 const (
-	defaultExplorerHost = "127.0.0.1:8001"
+	defaultExplorerHost = "127.0.0.1:8002"
 	defaultSkycoinAddr  = "http://127.0.0.1:8640"
 
 	// timeout for requests to the backend skycoin node
