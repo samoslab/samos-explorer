@@ -34,7 +34,7 @@
           <div class="-address"><a [routerLink]="'/app/transaction/' + transaction.id">{{ transaction.id }}</a><copy-button [text]="transaction.id"></copy-button></div>
           <br class="-xs-sm-only" />
           <div class="-label" [ngClass]="{'-red' : transaction.balance < 0, '-green' : transaction.balance >= 0}">
-            {{ (transaction.balance<0?"":"+")+(transaction.balance | number:'1.0-6') }} SKY <ng-container *ngIf="!transaction.status">(pending)</ng-container>
+            {{ (transaction.balance<0?"":"+")+(transaction.balance | number:'1.0-6') }} SAMO <ng-container *ngIf="!transaction.status">(pending)</ng-container>
           </div>
         </div>
       </div>
